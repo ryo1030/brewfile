@@ -1,5 +1,6 @@
-tap "homebrew/cask"
 tap "homebrew/bundle"
+tap "kayac/tap" # for ecspresso
+tap "ariga/tap" # for atlas
 cask_args appdir: "/Applications"
 
 ###  tools ###
@@ -8,37 +9,47 @@ brew "jq"
 brew "tree"
 brew "curl"
 brew "grep"
-brew "git"
-brew "goenv"
+brew "ffmpeg"
+brew "tcl-tk"
+brew "mysql-client"
+brew "mkcert"
+brew "nss"
+brew "switchaudio-osx"
+cask "session-manager-plugin"
 cask "clipy"
 cask "the-unarchiver"
 cask "appcleaner"
 cask "bettertouchtool"
 cask "google-japanese-ime" # dependency on `sudo softwareupdate --install-rosetta`
 cask "karabiner-elements"
+cask "1password"
 ###  communication ###
 cask "discord"
-cask "zoom"
 cask "slack"
 ###  other ###
 cask "spotify"
+cask "vlc"
 ###  browser ###
-cask "brave-browser"
 cask "google-chrome"
 ### developer tools ###
 cask "goland"
-# cask "phpstorm"
-cask "tableplus"
-cask "postman"
 cask "visual-studio-code"
+cask "cursor"
 cask "charles"
 cask "docker"
 cask "iterm2"
+brew "git"
+brew "goenv", args: ["HEAD"]
+brew "ctop"
+brew "tfenv"
+brew "awscli"
+brew "ecspresso"
+brew "atlas"
+brew "nodenv"
+cask "ngrok"
 
 ###  personal ###
 cask "notion"
-cask "asana"
-cask "figma"
 cask "evernote"
 cask "dropbox"
 cask "microsoft-excel"
@@ -47,6 +58,5 @@ cask "microsoft-outlook"
 cask "microsoft-powerpoint"
 cask "onedrive"
 mas "LINE", id: 539883307
-mas "NAS Navigator2", id: 450664466
 mas "BetterSnapTool", id: 417375580
 mas "QaLL", id: 480452005
